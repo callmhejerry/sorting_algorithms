@@ -10,10 +10,9 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *prev, *now, *next;
 
-	now = *list;
-	if (now != NULL && now->next != NULL)
+	if (list != NULL && *list != NULL && (*list)->next != NULL)
 	{
-		prev = now->prev, next = now->next;
+		now = *list, prev = now->prev, next = now->next;
 		while (now != NULL)
 		{
 			if (prev != NULL && now->n < prev->n)
