@@ -10,8 +10,8 @@ void print_array(const int *array, size_t size);
  */
 void shell_sort(int *array, size_t size)
 {
-	size_t out, inner, insertValue;
-	size_t temp;
+	size_t out, inner;
+	int insertValue;
 
 	/*initialise and define the gap interval, gap*/
 	size_t gap = 1;
