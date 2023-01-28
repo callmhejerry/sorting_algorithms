@@ -1,6 +1,7 @@
 #ifndef SORT_H
 #define SORT_H
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct listint_s - Doubly linked list node
@@ -24,8 +25,17 @@ void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void selection_sort(int *array, size_t size);
+<<<<<<< HEAD
 void shell_sort(int *array, size_t size);
 
 
+=======
+
+/*advance tasks*/
+void quick_sort(int *array, size_t size);
+void cocktail_sort_list(listint_t **list);
+void merge_sort(int *array, size_t size);
+void radix_sort(int *array, size_t size);
+>>>>>>> 12594916d788b454456c040cf2d718ef00cf4ba0
 
 #endif
