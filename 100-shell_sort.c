@@ -16,7 +16,7 @@ void shell_sort(int *array, size_t size)
 	/*initialise and define the gap interval, gap*/
 	size_t gap = 1;
 
-	if (array  == NULL || size == 0)
+	if (array  == NULL || size <= 1)
 		return;
 
 	while (gap <= size / 3)
